@@ -1,0 +1,170 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* 头部样式 */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #86868b;
+    font-size: 1.1rem;
+}
+
+/* 上传区域样式 */
+.upload-area {
+    background: white;
+    border-radius: 18px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.upload-box {
+    border: 2px dashed #86868b;
+    border-radius: 12px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: #0071e3;
+    background-color: rgba(0, 113, 227, 0.05);
+}
+
+.upload-icon {
+    width: 48px;
+    height: 48px;
+    fill: #86868b;
+    margin-bottom: 1rem;
+}
+
+.sub-text {
+    color: #86868b;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* 预览区域样式 */
+.preview-container {
+    background: white;
+    border-radius: 18px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.preview-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.preview-box {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container {
+    margin: 1rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f5f5f7;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.file-info {
+    color: #86868b;
+    font-size: 0.9rem;
+}
+
+/* 控制区域样式 */
+.compression-controls {
+    border-top: 1px solid #d2d2d7;
+    padding-top: 2rem;
+}
+
+.quality-control {
+    margin-bottom: 1.5rem;
+}
+
+.quality-control label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 6px;
+    background: #d2d2d7;
+    border-radius: 3px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #0071e3;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.download-btn {
+    background: #0071e3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.download-btn:hover {
+    background: #0077ED;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .preview-section {
+        flex-direction: column;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+} 
